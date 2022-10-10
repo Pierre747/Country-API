@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/icons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/icons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/icons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./assets/icons/site.webmanifest" />
+		<title>Country data</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+
+	<body>
+		<div class="filter-container">
+			<input type="text" id="inputSearch" placeholder="Search a country" />
+			<div class="range-container">
+				<input type="range" step="12" value="24" max="252" id="inputRange" />
+				<span id="rangeValue">24</span>
+			</div>
+			<button class="btnSort" id="minToMax">Population &#x2191;</button>
+			<button class="btnSort" id="maxToMin">Population &#x2193;</button>
+			<button class="btnSort" id="alpha">A ~ Z</button>
+		</div>
+
+		<div class="center" id="center">
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+			<div class="wave"></div>
+		</div>
+
+		<div class="countries-container"></div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
